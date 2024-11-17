@@ -40,12 +40,15 @@
 /* .pod-img{
     display: flex !important;
 } */
-@media (max-width:576px){
+@media (max-width:768px){
     .pod-img{
         clip-path: none !important;
     }
     cards{
         flex-direction: column !important;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 .pod-i:hover{
