@@ -1,0 +1,511 @@
+<html>
+    <head>
+        <title>Project 3</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-opacity-75">
+            <div class="container-fluid">
+                <img src="images/letter-globe-logo-template-illustration-design_822766-12926.avif" width="60px" height="60px" class="rounded-circle mx-3 me-0">
+              <a class="navbar-brand text-primary-emphasis fs-3 border-end px-3 border-3" href="#">GLOBAL</a>
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-primary mx-1" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary mx-1" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-primary mx-1 p-2 rounded-3 col-2 col-lg-12" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Trips
+                    </a>
+                    <ul class="dropdown-menu bg-light bg-opacity-75">
+                      <li><a class="dropdown-item text-primary fs-5" href="#">Egypt</a></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">Saudi Arabia</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">France</a></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">Turkey</a></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">China</a></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">Italy</a></li>
+                      <li><a class="dropdown-item text-primary fs-5" href="#">More...</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary mx-1" aria-disabled="true">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex " role="search">
+                  <input class="form-control border-primary me-2 mt-3" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn bg-primary mx-2 text-white mt-3" type="submit">Search</button>
+                  <button class="btn bg-primary text-white mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary h-75 p-3 my-0 ">
+                  <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Login</h1>
+                  <button type="button" class="btn-close bg-primary-subtle px-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label text-primary fs-5">Email Address</label>
+                        <input type="email" class="form-control border-primary" id="inputEmail4">
+                        <p class="text-dark fs-6 mt-1 mb-3">We will never share your E-mail with anyone else.</p>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label text-primary fs-5 m">Password</label>
+                        <input type="password" class="form-control border-primary mb-3" id="inputPassword4">
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input bg-primary border-0 mx-3 me-1" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label text-primary" for="flexSwitchCheckChecked">Remember me</label>
+                        </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary text-white px-3 mx-2">Login</button>
+                  <button type="button" class="btn btn-primary text-white px-3 me-2 " data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="myicons row" style="position: fixed; top: 210px; left: 90%; z-index: 1;">
+            <a href="#"><i class="fa-brands fa-facebook fs-1 mb-4 bg-secondary text-light p-2 rounded-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fs-1 mb-4 bg-secondary text-light p-2 rounded-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fs-1 mb-4 bg-secondary text-light p-2 rounded-2"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fs-1 mb-4 bg-secondary text-light p-2 rounded-2"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp fs-1 mb-4 bg-secondary text-light p-2 rounded-2"></i></a>
+        </div>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+              <div class="carousel-item active h-100">
+                <img src="images/young-man-walking-towards-great-sphinx-giza_181624-51674.avif" class="d-block w-100 h-100" >
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded-2">
+                        <h5 class="fs-2 ">EGYPT</h5>
+                        <p class="text-capitalize">The holder country of the Pyramids</p>
+                        <a href="#" class="btn btn-primary text-capitalize ">visit us</a>
+                      </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/cityscape-paris-sunlight-blue-sky-fra_181624-50289.jpg" class="d-block w-100 h-100" alt="...">
+    
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded-2">
+                    <h5 class="fs-2">FRANCE</h5>
+                    <p>Paris, The Eiffel Tower</p>
+                    <a href="#" class="btn btn-primary text-capitalize ">visit us</a>
+                  </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="images/beautiful-aerial-shot-florence-italy-architecture-evening_181624-2203.avif" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded-2 ">
+                    <h5 class="fs-2">ITALY</h5>
+                    <p class="text-capitalize">here exist the best sceneries</p>
+                    <a href="#" class="btn btn-primary text-capitalize ">visit us</a>
+                  </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="images/great-wall_1359-1016.avif" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded-2">
+                    <h5 class="fs-2 text-uppercase">china</h5>
+                    <p class="text-capitalize">mostly known by it's glamorious history</p>
+                    <a href="#" class="btn btn-primary text-capitalize ">visit us</a>
+                  </div>
+            </div>
+            <button class="carousel-control-prev h-75 my-5 my-lg-auto" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next h-75 my-5 my-lg-auto" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="welcome rounded-bottom-3" >
+            <div class="welcome-info p-4 mx-2">
+                <h3 class="text-uppercase text-primary-emphasis">welcome</h3>
+                <p class=" text-secondary">From Wild River Rafting to Volcano Hikes and Tropical Forest Trekking. From the Swiss Alps to South East Asia. From Jungle Safari to Desert Safari. Join us in our adventures around the world.</p>
+                <a href="#" class="btn btn-primary p-3">Learn more</a>    
+            </div>
+          </div>
+          <hr class="mb-0">
+          <div class="most-popular p-5 rounded-3 bg-body-secondary">
+                <h1 class="text-center text-uppercase fs-1 text-info-emphasis">Our most popular holiday destinations</h1>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-capitalize text-info-emphasis fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    The city of giza
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p class="text-secondary">Pyramids and Antiquities Giza City is most famous for being the site of the three great pyramids of the 4th-dynasty pharaohs, including the iconic Great Pyramid of Khufu, as well as the Sphinx, smaller pyramids, tombs, and temples. The pyramids were constructed around 2580-2500 BC and are considered one of the Seven Wonders of the Ancient World.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-capitalize text-info-emphasis fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    The city of paris
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-secondary">Paris has a long and storied past, dating back to the 3rd century BC.
+                        The city is famous for its iconic landmarks, such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum.</p>
+                  </div>
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize text-info-emphasis  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  the city of rome
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p class="text-secondary">Rome, the capital of Italy, is a city with a rich history spanning over 2,700 years. Founded in 753 BC, Rome has been a major center of power, culture, and architecture, leaving behind a lasting legacy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="translation-header bg-primary"> 
+            <h2 class="text-capitalize p-4 text-center text-white fs-2">translate from english to arabic</h2>
+          </div>
+          <div class="translation-body row">
+            <h4 class="text-capitalize p-4 mx-4 mb-0 ">you don't speak arabic? write and we will translate for you!</h4>
+            <button type="button"  class=" translate-btn btn bg-primary text-white py-2 mx-5 mb-4 mt-0 col-3 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Click Here">
+                Translate
+              </button>
+              <textarea class=" mx-5 rounded-3 border-secondary-subtle border-2 col-10 col-lg-11"placeholder="  Translation" cols="180" rows="6"></textarea>
+          </div>
+          <div class="translation-header bg-primary mt-5"> 
+            <h2 class="text-capitalize p-4 text-center text-white fs-2">translate from english to italian</h2>
+          </div>
+          <div class="translation-body row">
+            <h4 class="text-capitalize p-4 mx-4 mb-0 ">you don't speak italian? write and we will translate for you!</h4>
+            <button type="button"  class=" translate-btn btn bg-primary text-white py-2 mx-5 mb-4 mt-0 col-3 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Click Here">
+                Translate
+              </button>
+              <textarea class=" mx-5 rounded-3 border-secondary-subtle border-2 col-10 col-lg-11"placeholder="  Translation" cols="180" rows="6"></textarea>
+          </div>
+          <div class="translation-header bg-primary mt-5"> 
+            <h2 class="text-capitalize p-4 text-center text-white fs-2">translate from english to french</h2>
+          </div>
+          <div class="translation-body row">
+            <h4 class="text-capitalize p-4 mx-4 mb-0 ">you don't speak french? write and we will translate for you!</h4>
+            <button type="button"  class=" translate-btn btn bg-primary text-white py-2 mx-5 mb-4 mt-0 col-3 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Click Here">
+                Translate
+              </button>
+              <textarea class=" mx-5 rounded-3 border-secondary-subtle border-2 col-10 col-lg-11"placeholder="  Translation" cols="180" rows="6"></textarea>
+          </div>
+          <div class="translation-header bg-primary mt-5"> 
+            <h2 class="text-capitalize p-4 text-center text-white fs-2">translate from english to chinese</h2>
+          </div>
+          <div class="translation-body row">
+            <h4 class="text-capitalize p-4 mx-4 mb-0 ">you don't speak chinese? write and we will translate for you!</h4>
+            <button type="button"   class=" translate-btn btn bg-primary text-white py-2 mx-5 mb-4 mt-0 col-3 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Click Here">
+                Translate
+              </button>
+              <textarea class=" mx-5 rounded-3 border-secondary-subtle mb-5 border-2 col-10 col-lg-11"placeholder="  Translation" cols="180" rows="6"></textarea>
+          </div>
+          <div class="bg-pic-1 mb-5" style="background-image: url(images/You\ sitting\ on\ a\ beach\ at\ sunset\,\ with\ the\ vibrant\ sky\ in\ the\ background.jpeg); background-attachment: fixed; background-position: center; background-size: cover; width: 100%; height: 300px;">
+          </div>
+          <div class="travel-title">
+            <h2 class="text-center fs-1 text-primary-emphasis mb-5">Where Your Journey Becomes the Story</h2>
+          </div>
+     <div class="card-parent row justify-content-center justify-content-md-around justify-content-lg-center gap-5 mb-5">
+        <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/9 Amazing Things To Do In Cairo After You’ve Visited The Pyramids.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">cairo</span>
+                    <a href="#" class="btn btn-primary text-capitalize">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary"> capital of egypt</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/The Eiffel Tower on the Seine Downtown Paris France Canvas Photography Metal Print Wall Art Picture Home Decor Poster.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">paris</span>
+                    <a href="#" class="btn btn-primary text-capitalize ">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">the city of love</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/Beautiful scenery of Beijing-Tianjin-Hebei cities_.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">china</span>
+                    <a href="#" class="btn btn-primary text-capitalize ">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">fabulous sceneries</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/Holy Place Kabba.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">makkah</span>
+                    <a href="#" class="btn btn-primary text-capitalize ">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">holiest place on earth</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/75f61ce3-087e-47c9-a6d4-611f39566dea.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">istanbul</span>
+                    <a href="#" class="btn btn-primary text-capitalize ">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">capital of turkey</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/How to Visit Colosseum in 2024_ Tickets, Tours & Levels Explained (Rome, Italy).jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">rome</span>
+                    <a href="#" class="btn btn-primary text-capitalize ">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary"> the beacon of history</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/Siwa Oasis Egypt.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">siwa</span>
+                    <a href="#" class="btn btn-primary text-capitalize">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">siwa oasis</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-4" style="width: 22rem;">
+            <img src="images/Guide To Visiting The Forbidden City In Beijing, China.jpeg" class="card-img-top" height="380px">
+            <div class="card-body">
+                <div class="card-main-info d-flex justify-content-between">
+                    <span class="card-title text-uppercase fs-4 text-primary-emphasis">beijing</span>
+                    <a href="#" class="btn btn-primary text-capitalize">know more</a>
+                </div>
+              <p class="text-capitalize text-secondary">the forbidden city</p>
+            </div>
+          </div>
+     </div>
+     <div class="bg-pic-2 mb-5" style="background-image: url(images/3fad83213e2981bae758136f88bcb691.jpg); background-attachment: fixed; background-position: center; background-size: cover; width: 100%; height: 300px;">
+    </div>
+    <div class="tour-title">
+        <h2 class="text-capitalize text-primary-emphasis text-center fs-1 mb-5">private tour guides</h2>
+    </div>
+    <div class="tour-parent row d-flex justify-content-center mb-5">
+        <div class="tour-card rounded-4 mb-5 col-lg-4 mx-3" style="width: 350px; height: 408px; background-image: url(images/gettyimages-1060514672-612x612.jpg); background-position: center; transition: 0.5s;">
+         <div class="overlay">
+          <h3 class="text-capitalize text-white fs-3 text-center mt-3">always there for you</h3>
+          <i class="fa-regular fa-calendar-days text-white mx-4 fs-6 me-0"></i>
+          <span class="text-white" style="font-size: 14px;">February 22, 2019</span>
+          <div class="on-image">
+            <img src="images/gettyimages-1060514672-612x612.jpg " class="rounded-circle mx-3" style="width: 100px; height: 110px; margin-top: 175px; ">
+            <p class="text-capitalize text-white mx-3 mt-1">there for you in china</p>
+          </div>
+         </div>
+        </div>
+        <div class="tour-card rounded-4 mb-5 col-12 col-lg-4 mx-3" style="width: 350px; height: 408px; background-image: url(images/gettyimages-1190694112-612x612.jpg); background-position: center; transition: 0.5s;">
+         <div class="overlay">
+          <h3 class="text-capitalize text-white fs-3 text-center mt-3">always there for you</h3>
+          <i class="fa-regular fa-calendar-days text-white mx-4 fs-6 me-0"></i>
+          <span class="text-white" style="font-size: 14px;">October 15, 2021</span>
+          <div class="on-image">
+            <img src="images/gettyimages-1190694112-612x612.jpg" class="rounded-circle mx-3" style="width: 100px; height: 110px; margin-top: 175px;">
+            <p class="text-capitalize text-white mx-3 mt-1">there for you in france</p>
+          </div>
+         </div>
+        </div>
+        <div class="tour-card rounded-4 mb-5 col-12 col-lg-4 mx-3" style="width: 350px; height: 408px; background-image: url(images/gettyimages-1190048047-612x612.jpg); background-position: center; transition: 0.5s;">
+        <div class="overlay">
+          <h3 class="text-capitalize text-white fs-3 text-center mt-3">always there for you</h3>
+          <i class="fa-regular fa-calendar-days text-white mx-4  fs-6 me-0"></i>
+          <span class="text-white" style="font-size: 14px;">June 4, 2023</span>
+          <div class="on-image">
+            <img src="images/gettyimages-1190048047-612x612.jpg" class="rounded-circle mx-3" style="width: 100px; height: 110px; margin-top: 175px;">
+            <p class="text-capitalize text-white mx-3 mt-1">there for you in italy</p>
+          </div>
+        </div> 
+        </div>
+    </div>
+    <hr class="mt-5 mb-5">
+    <h2 class="text-center text-capitalize fs-1 text-primary-emphasis mt-5 mb-5">learn more by listening to our podcasts</h2>
+      <div class="cards mt-5 mb-5 m-auto border rounded-3 bg-body-tertiary row col-10 col-lg-10 d-flex" >
+        <div class="row g-0">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <div class="card-body p-5">
+              <h5 class="card-title fs-2 text-capitalize mb-2 text-info-emphasis">the step pyramid</h5>
+              <i class="fa-regular fa-calendar-days text-dark fs-6 me-0"></i>
+              <span class="text-dark" style="font-size: 14px;">April 26, 2015</span>
+              <hr class="pod-line rounded-1">
+              <p class="card-text fs-5 mb-0 mb-lg-5">The Egyptian pyramids are ancient masonry structures located in Egypt. Sources cite at least 118 identified "Egyptian" pyramids. Approximately 80 pyramids were built within the Kingdom of Kush, now located in the...</p>
+              <div class="pod-icons row justify-content-center justify-content-lg-start mx-lg-1">
+                <span class="pod-i border mt-5 px-3 px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-tag"></i><span>Podcast</span></span>
+                <span class="pod-i border mt-5 px-3  px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-clock"></i><span>37 mins.</span></span>
+                <span class="pod-sp-i border mt-3 mt-lg-5 px-3 px-lg-2 py-1 rounded-1 bg-secondary-subtle col-5 col-lg-2"><i class="fa-solid fa-play text-info-emphasis"></i><span class=" text-info-emphasis">Play Episode</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="pod-img col-12 col-lg-4 order-1 order-lg-2" style="clip-path: polygon(13% 0, 100% 0%, 100% 100%, 27% 100%); height: 450px;">
+            <img src="images/4e23311a-8ffd-4cf5-b3d9-7520cf9c41a2.jpeg" class="img-fluid rounded-start" style=" width: 100%; height: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="cards mt-5 mb-5 m-auto border rounded-3 bg-body-tertiary row col-10 col-lg-10" >
+        <div class="row g-0">
+          <div class="pod-img col-12 col-lg-4 me-0"  style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); height:450px ;">
+            <img src="images/Premium Photo _ Louvre Museum Paris.jpeg" class="img-fluid rounded-start" style=" width: 100%; height: 100%;">
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body p-5">
+              <h5 class="card-title fs-2 text-capitalize mb-2 text-info-emphasis">Rencontrer l'amour en france</h5>
+              <i class="fa-regular fa-calendar-days text-dark fs-6 me-0"></i>
+              <span class="text-dark" style="font-size: 14px;">November 12, 2020</span>
+              <hr class="pod-line rounded-1">
+              <p class="card-text fs-5 mb-0 mb-lg-5">Paris has been a crucible for artistic and intellectual movements, including Impressionism, Symbolism, and Surrealism. The city is home to numerous museums, galleries, and libraries, including the Musée d’Orsay.</p>
+              <div class="pod-icons row justify-content-center justify-content-lg-start mx-lg-1">
+                <span class="pod-i border mt-5 px-3 px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-tag"></i><span>Podcast</span></span>
+                <span class="pod-i border mt-5 px-3  px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-clock"></i><span>45 mins.</span></span>
+                <span class="pod-sp-i pod-i border mt-3 mt-lg-5 px-3  px-lg-2 py-1 rounded-1 bg-secondary-subtle col-5 col-lg-2"><i class="fa-solid fa-play text-info-emphasis"></i><span class=" text-info-emphasis">Play Episode</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards mt-5 mb-5 m-auto border rounded-3 bg-body-tertiary row col-10 col-lg-10" >
+        <div class="row g-0">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <div class="card-body p-5">
+              <h5 class="card-title fs-2 text-capitalize mb-2 text-info-emphasis">the hagia sophia</h5>
+              <i class="fa-regular fa-calendar-days text-dark fs-6 me-0"></i>
+              <span class="text-dark" style="font-size: 14px;">October 1, 2021</span>
+              <hr class="pod-line rounded-1">
+              <p class="card-text fs-5  mb-0 mb-lg-5">Hagia Sophia, also known as Ayasofya in Turkish, is a former Byzantine church, Ottoman mosque, and now a museum, located in Istanbul, Turkey. Here are some key facts about this iconic structure...</p>
+              <div class="pod-icons row justify-content-center justify-content-lg-start mx-lg-1">
+                <span class=" pod-i border mt-5 px-3 px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-tag"></i><span>Podcast</span></span>
+                <span class="pod-i border mt-5 px-3  px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-clock"></i><span >50 mins.</span></span>
+                <span class="pod-sp-i border mt-3 mt-lg-5 px-3 px-lg-2 py-1 rounded-1 bg-secondary-subtle col-5 col-lg-2"><i class="fa-solid fa-play text-info-emphasis"></i><span class=" text-info-emphasis">Play Episode</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="pod-img col-12 col-lg-4 order-1 order-lg-2" style="clip-path: polygon(13% 0, 100% 0%, 100% 100%, 27% 100%); height: 450px;">
+            <img src="images/a3acceaf46bd14faecc167fe06a6d873.jpg" class="img-fluid rounded-start" style=" width: 100%; height: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="cards mt-5 mb-5 m-auto border rounded-3 bg-body-tertiary row col-10 col-lg-10" >
+        <div class="row g-0">
+          <div class="pod-img col-12 col-lg-4 me-0" style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); height:450px ;">
+            <img src="images/Mountainside Temples in China.jpeg" class="img-fluid rounded-start" style=" width: 100%; height: 100%;">
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body p-5">
+              <h5 class="card-title fs-2 text-capitalize mb-2 text-info-emphasis">the east is red</h5>
+              <i class="fa-regular fa-calendar-days text-dark fs-6 me-0"></i>
+              <span class="text-dark" style="font-size: 14px;">July 12, 2022</span>
+              <hr class="pod-line rounded-1">
+              <p class="card-text fs-5 mb-0 mb-lg-5"> China has over 2,000 river and seaports, about 130 of which are open to foreign shipping. Of the fifty busiest container ports, 15 are located in China, of which the busiest is the Port of Shanghai, also the busiest port in the world.</p>
+              <div class="pod-icons row justify-content-center justify-content-lg-start mx-lg-1">
+                <span class=" pod-i border mt-5 px-3 px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-tag"></i><span>Podcast</span></span>
+                <span class=" pod-i border mt-5 px-3  px-lg-3 py-1 rounded-1 bg-secondary-subtle me-2 col-4 col-lg-2"><i class="fa-solid fa-clock"></i><span>30 mins.</span></span>
+                <span class=" pod-sp-i border mt-3 mt-lg-5 px-3  px-lg-2 py-1 rounded-1 bg-secondary-subtle col-5 col-lg-2"><i class="fa-solid fa-play text-info-emphasis"></i><span class=" text-info-emphasis">Play Episode</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center text-capitalize fs-1 text-primary-emphasis mt-5 mb-4">travel with us</h2>
+      <div class="sns-prent row justify-content-center">
+        <div class="sns-item bg-body-tertiary mx-3 mb-5 rounded-1" style="width: 280px; height: 255px;">
+          <div class="sns-info text-center mt-4">
+            <h3 class="text-capitalize text-info-emphasis fs-2 mb-4">follow us</h3>
+            <img src="images/Logo Twitter.jpeg" class="rounded-3" style=" width:100px;">
+            <h3 class="text-info-emphasis fs-2 mt-3">Here</h3>
+          </div>
+        </div>
+        <div class="sns-item bg-body-tertiary mx-3 mb-5 rounded-1" style="width: 280px; height: 255px;">
+         <div class="sns-info text-center mt-4">
+          <h3 class="text-capitalize text-info-emphasis fs-2 mb-4">chat with us</h3>
+          <img src="images/Icônes de Whatsapp en téléchargement gratuit.jpeg" class="rounded-3" style=" width:100px;">
+          <h3 class="text-info-emphasis fs-2 mt-3">Here</h3>
+         </div>
+        </div>
+        <div class="sns-item bg-body-tertiary mx-3 mb-5 rounded-1" style="width: 280px; height: 255px;">
+          <div class="sns-info text-center mt-4">
+            <h3 class="text-capitalize text-info-emphasis fs-2 mb-4 ">visit us</h3>
+            <img src="images/LinkedIn New 2020 Logo PNG Vector (SVG) Free Download.jpeg" class="rounded-3" style=" width:100px;">
+            <h3 class="text-info-emphasis fs-2 mt-3">Here</h3>
+          </div>
+        </div>
+        <div class="sns-item bg-body-tertiary mx-3 mb-3 rounded-1" style="width: 280px; height: 255px;">
+          <div class="sns-info text-center mt-4">
+            <h3 class="text-capitalize text-info-emphasis fs-2 mb-4">engage with us</h3>
+            <img src="images/_Instagram.jpeg" class="rounded-3" style=" width:100px;">
+            <h3 class="text-info-emphasis fs-2 mt-3">Here</h3>
+          </div>
+        </div>
+      </div>
+      <footer class="row bg-primary">
+        <section class="col-12 col-lg-4 text-center">
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <header class="mt-4">
+            <img src="images/letter-globe-logo-template-illustration-design_822766-12926.avif" width="80px" height="80px" class="rounded-circle mx-3 me-0">
+            <span class="text-uppercase text-white fs-5">travel agency</span>
+          </header>
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <p class="text-white">Tel: 000-438-992</p>
+          <p class="text-white">Address: EGYPT</p>
+          <p class="text-white">Fax: 085-919-672</p>
+        </section>
+        <section class="col-12 col-lg-4 text-center">
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <header class="mt-4">
+          <img src="images/letter-globe-logo-template-illustration-design_822766-12926.avif" width="80px" height="80px" class="rounded-circle mx-3 me-0">
+          <span class="text-uppercase text-white fs-5">about</span>
+          </header>
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <p class="text-white">Blog</p>
+          <p class="text-white">Privacy policy</p>
+          <p class="text-white">Terms and conditions</p>
+        </section>
+        <section class="col-12 col-lg-4 text-center">
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <header class="mt-4">
+          <img src="images/letter-globe-logo-template-illustration-design_822766-12926.avif" width="80px" height="80px" class="rounded-circle mx-3 me-0">
+          <span class="text-uppercase text-white fs-5">help</span>
+          </header>
+          <hr class="text-bg-secondary mt-4 mx-2">
+          <p class="text-white">Tutorials</p>
+          <p class="text-white">Office hours</p>
+          <p class="text-white">Contact us</p>
+        </section>
+        <hr class="text-bg-secondary mt-2">
+        <h3 class="text-uppercase fs-4 text-center mb-3 text-primary-emphasis">copyright &copy; 2024 global tours-travel agency. all rights reserved.</h3>
+      </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html
