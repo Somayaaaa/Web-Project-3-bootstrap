@@ -49,7 +49,7 @@
 }
 @media screen and (max-width:768px){
     .pod-img{
-        clip-path: none !important;
+        clip-path:none !important;
     }
 }
 .pod-i:hover{
