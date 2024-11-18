@@ -51,12 +51,9 @@
     .pod-img{
         clip-path: none !important;
     }
-    /* .cards{
-        flex-direction: column !important;
-    } */
 }
 .pod-i:hover{
-    background-color: rgba(0,0,0,0.4) !important
+    background-color: rgba(0,0,0,0.4) !important;
 }
 .pod-sp-i:hover{
     background-color:rgb(53, 107, 223) !important;
